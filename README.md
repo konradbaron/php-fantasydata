@@ -8,7 +8,7 @@ The API currently returns your data in two formats; JSON and XML.
 ## Requirements
 This library requires the use of Composer.
 ```
-composer require konradbaron/fantasydata
+composer require konradbaron/fantasydata:dev-master
 ```
 
 You must first register an account to receive an API key from [FantasyData Portal](http://fantasydata.com/). There is a free trial option, which limits the amount of API calls to 1K per month.
