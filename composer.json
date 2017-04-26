@@ -1,0 +1,21 @@
+{
+    "name": "konradbaron/fantasydata",
+    "description": "PHP library for the Fantasy Data API",
+	"keywords": ["fantasy data", "api"],
+	"type": "package",
+    "authors": [
+        {
+            "name": "Konrad Baron",
+            "email": "konradbaron@gmail.com"
+        }
+    ],
+	"autoload": {
+        "psr-4": {
+            "KonradBaron\\FantasyData\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "~6.2"
+    },
+	"version": "1.0.0"
+}
