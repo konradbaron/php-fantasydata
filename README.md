@@ -1,7 +1,7 @@
 # PHP-FantasyData
 
 PHP-FantasyData is a PHP library for the [FantasyData API version 3](http://fantasydata.com/).
-This library currently only contains wrappers for the NFL section of the API. Other sections are planned to be added in the future.
+This library currently only contains wrappers for the Full NFL section, and the NBA Scores section of the API. Other sections are planned to be added in the future.
 
 The API currently returns your data in two formats; JSON and XML.
 
