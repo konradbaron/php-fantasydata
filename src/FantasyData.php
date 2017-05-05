@@ -58,4 +58,16 @@ abstract class FantasyData
 		}
 		return true;
 	}
+
+	protected function validateDate($date)
+	{
+		$compare = \DateTime::createFromFormat('Y-M-d', $date);
+		if(!is_object($compare)) {
+			throw new \Exception('Date is not valid.');
+		}
+		if(strtolower($compare->format('Y-M-d')) != strtolower($date)) {
+			throw new \Exception('Date Format is not valid. Must be sent as Y-M-d, for example 2015-JUL-01');
+		}
+		return true;
+	}
 }
