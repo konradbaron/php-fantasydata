@@ -15,8 +15,17 @@ You must first register an account to receive an API key from [FantasyData Porta
 
 ##Example Usage
 
+__NFL__
+
 ```php
     use KonradBaron\FantasyData\FantasyDataNFLPlayByPlay;
     $fd = new FantasyDataNFLPlayByPlay('YOUR_API_KEY');
     echo $fd->playByPlay('json', '2016REG', 8, 'WAS');
+```
+__NBA__
+
+```php
+    use KonradBaron\FantasyData\FantasyDataNBAScores;
+    $fd = new FantasyDataNBAScores('YOUR_API_KEY');
+    echo $fd->schedules('json', '2016');
 ```
