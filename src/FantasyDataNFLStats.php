@@ -36,7 +36,8 @@ final class FantasyDataNFLStats extends FantasyDataNFL
 	/**
 	 * Box Scores Active
 	 * This method returns box scores for all games that are either in-progress or have been updated within the last 30 minutes.
-	 * Required parameters | season | week
+	 * Required parameters
+	 * format | season | week
 	 */
 	public function boxScoresActive($format)
 	{

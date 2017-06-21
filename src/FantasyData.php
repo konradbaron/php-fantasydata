@@ -70,4 +70,12 @@ abstract class FantasyData
 		}
 		return true;
 	}
+
+	protected function validateGameId($gameId)
+	{
+		if(!is_int($gameId)) {
+			throw new \Exception('Game ID is not valid. ID must be an integer');
+		}
+		return true;
+	}
 }
