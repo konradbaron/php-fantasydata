@@ -31,4 +31,20 @@ final class FantasyDataNBAPlayByPlay extends FantasyDataNBA
 		$requestUrl = $this->url.'/'.$format.'/'.$urlSuffix;
 		$this->request($requestUrl);
 	}
+
+	/**
+	 * Play By Play Delta
+	 * Required parameters
+	 * format | date | minutes
+	 */
+	public function playByPlayDelta($format, $date, $minute)
+	{
+		$this->validateFormat($format);
+		$this->validateDate($date);
+		$this->validateMinutes($minute);
+
+		$urlSuffix = 'PlayByPlayDelta'.'/'.$date.'/'.$minute;
+		$requestUrl = $this->url.'/'.$format.'/'.$urlSuffix;
+		$this->request($requestUrl);
+	}
 }

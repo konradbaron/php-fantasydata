@@ -32,4 +32,20 @@ final class FantasyDataNFLPlayByPlay extends FantasyDataNFL
 		$requestUrl = $this->url.'/'.$format.'/'.$urlSuffix;
 		$this->request($requestUrl);
 	}
+
+	/**
+	 * Play By Play Delta
+	 * Required parameters
+	 * format | season | week | minutes
+	 */
+	public function playByPlayDelta($format, $season, $week, $minute)
+	{
+		$this->validateFormat($format);
+		$this->validateWeek($week);
+		$this->validateMinutes($minute);
+
+		$urlSuffix = 'PlayByPlayDelta'.'/'.$season.'/'.$week.'/'.$minute;
+		$requestUrl = $this->url.'/'.$format.'/'.$urlSuffix;
+		$this->request($requestUrl);
+	}
 }
