@@ -51,6 +51,14 @@ abstract class FantasyData
 		return true;
 	}
 
+	protected function validateScoreId($scoreId)
+	{
+		if(!is_int($scoreId)) {
+			throw new \Exception('Score ID is not valid. ID must be an integer');
+		}
+		return true;
+	}
+
 	protected function validateMinutes($minute)
 	{
 		if(!is_int($minute) || $minute > $this->minuteMax || $minute < 1) {

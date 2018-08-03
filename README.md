@@ -13,7 +13,7 @@ composer require konradbaron/fantasydata:dev-master
 
 You must first register an account to receive an API key from [FantasyData Portal](http://fantasydata.com/). There is a free trial option, which limits the amount of API calls to 1K per month.
 
-##Example Usage
+## Example Usage
 
 __NFL__
 
